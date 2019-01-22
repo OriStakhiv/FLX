@@ -1,0 +1,117 @@
+/*Task_1*/
+@media print {
+    [class$="tm-content-box"], .blocks, .tm-sidebar{
+        display: none;
+    }
+    .flex-item .tm-section-title {
+      color: blue;
+    }
+    .flex-item{
+        float: left;
+        width: 50%;
+    }
+    
+  }
+/* Task_2*/
+   .tm-section-title-box:hover{
+    background-color: #87CEFA;
+    color: white;
+    font-weight: bold;
+
+  }
+/*Task_3*/
+   p:first-letter {
+    color: #87cefa;  
+    font-size: 30px;  
+  }
+/*Task_4*/
+  .tm-content-box, .tm-sidebar{    
+    box-shadow: 0px 0px 9px 3px #888888;
+  }
+  @media screen{
+    .tm-content-box.flex-2-col {
+        display: flex;
+        align-items: center;
+      }
+
+    .tm-banner {
+        border: 30px solid #eee;
+        padding: 0;
+      }
+  
+/*Task_5*/
+  section::before{
+    content: "";
+    border: 0 solid transparent;
+    border-bottom-width: 30px;
+    border-top-width: 0px;
+    border-left: 250px solid #87CEFA; 
+  }
+}
+/*Task_6*/
+  .carousel-content .tm-section-title {
+    letter-spacing: 5px;
+    color: gainsboro;
+  }
+/* Task_7*/
+  .tm-section-description:first-of-type, .box p{
+    font-style: italic;
+  }
+/*Task_8*/
+  .tm-section-description{
+    text-indent: 1.5em;
+    line-height: 2em;   
+  }
+/*Task_9*/
+  .heading li a {
+    color: black;
+  }
+  .heading li a.text::after {
+    content: "New";
+    color: red;
+    font-size: 0.6em;
+    vertical-align: super;
+  }
+  .heading li a:hover {
+    text-decoration: underline double;
+    color: #87cefa;
+  }
+  .heading li a:visited {
+    text-decoration: underline;
+  }
+/*Task_10*/    
+  .blocks .box:nth-child(2n){
+      background-color: #eee;
+  }
+  .box-work{
+      padding: 10px;
+  }
+  .box p::first-letter{
+      color: black;
+  }
+/*Task_11*/
+
+.mandatory-field::after {
+    content: "*";
+    right: 10px;
+    font-size: 20px;
+    color: red;
+  }
+.submit-btn{
+    border-radius: 0px;    
+    color: #87CEFA;
+    border-color: #87CEFA;
+    background-color: white;
+    float: right;
+    width: 150px;
+    height: 50px;
+ } 
+ .submit-btn:hover{
+    border-color:inherit; 
+    background-color: #87cefa;
+    color: white;
+ }
+/*Task_12*/
+ .tm-main-nav li:hover{
+  background-color: #eee;
+ }
