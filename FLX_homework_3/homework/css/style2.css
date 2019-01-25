@@ -1,0 +1,166 @@
+body {
+  margin: 0px;
+  font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: #EFEFEF;
+  color: #757575; }
+
+header {
+  background: url("../img/header_background_v2.jpg") no-repeat top;
+  background-size: cover;
+  height: 100vh;
+  color: #ff5722;
+  text-transform: uppercase; }
+  header .top-wrapper {
+    display: flex; }
+    header .top-wrapper img {
+      width: 30%; }
+    header .top-wrapper nav {
+      margin-left: auto;
+      padding: 15px;
+      margin-top: 0px; }
+      header .top-wrapper nav a {
+        padding-right: 90px;
+        padding-left: 90px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none; }
+        header .top-wrapper nav a:first-child {
+          border-right: #648383 solid 1.5px; }
+        header .top-wrapper nav a:last-child {
+          border-left: #648383 solid 1.5px; }
+  header section {
+    top: 30%;
+    position: relative;
+    text-align: center; }
+    header section h1 {
+      margin: 30px; }
+    header section .btn {
+      color: white;
+      text-decoration: none;
+      background-color: #0401AC;
+      padding-right: 70px;
+      padding-left: 70px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 185px; }
+  .toolbar input {
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 0px;
+    width: 150px;
+    margin: 15px;
+    background-color: #EFEFEF;
+    border: #607D8B solid 1px; }
+
+.post-list {
+  display: flex;
+  flex-direction: column; }
+  .post-list h1 {
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0px 190px 0px 0px; }
+  .post-list article {
+    width: 70%;
+    align-self: center;
+    padding: 5px;
+    margin: 10px;
+    background-color: white; }
+    .post-list article h3 {
+      margin: 5px 5px 0px 0px;
+      text-transform: uppercase;
+      color: #607D8B; }
+    .post-list article .btn {
+      color: white;
+      text-decoration: none;
+      background-color: #0401AC;
+      padding-right: 70px;
+      padding-left: 70px;
+      text-transform: uppercase;
+      border: none;
+      float: right;
+      margin-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .post-list img {
+    float: left;
+    padding: 5px;
+    width: 30%; }
+  .post-list .post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+    .post-list .post .post-description {
+      font-size: 12px;
+      color: #9d9b9b;
+      border-bottom: #607D8B solid 1px; }
+    .post-list .post p {
+      line-height: 1.5;
+      margin: 0px; }
+
+.about {
+  display: flex;
+  flex-direction: column; }
+  .about h1 {
+    margin-top: 40px;
+    text-align: right;
+    text-transform: uppercase; }
+  .about div {
+    width: 70%;
+    align-self: center; }
+  .about img {
+    align-self: center;
+    width: 100%; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px; }
+  .contact-form h1, .contact-form h4 {
+    text-align: right;
+    text-transform: uppercase;
+    width: 70%;
+    align-self: center;
+    margin: 0px; }
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-self: center; }
+    .contact-form form label {
+      display: block;
+      text-align: right;
+      color: #607D8B; }
+    .contact-form form input {
+      display: flex;
+      width: 410px;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 5px;
+      background-color: #EFEFEF;
+      border: #607D8B solid 1px; }
+    .contact-form form textarea {
+      width: 870px;
+      margin: 5px;
+      background-color: #EFEFEF;
+      border: #607D8B solid 1px; }
+    .contact-form form button {
+      color: white;
+      text-decoration: none;
+      background-color: #0401AC;
+      padding-right: 70px;
+      padding-left: 70px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: none;
+      text-transform: uppercase;
+      margin-left: 700px; }
+
+footer {
+  margin-top: 20px;
+  font-size: 12px; }

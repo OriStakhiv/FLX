@@ -1,0 +1,191 @@
+@mixin btnStyle {
+    color: white;
+    text-decoration: none;
+    background-color:  $btnColor;
+    padding-right: 70px;
+    padding-left: 70px;  
+}
+body{
+    margin: 0px;
+    font: $fontStack;
+    background-color: $bgColor;
+    color:$bgFontColor;
+}
+header{
+    background: $backgroundImage;
+    background-size: cover;
+    height: 100vh;
+    color: $headerFontColor;
+    text-transform: uppercase;
+    .top-wrapper{
+       display: flex;
+        img{
+           width:30%;
+        }
+        nav{
+           margin-left: auto;
+           padding: 15px;
+           margin-top: 0px;
+           a{
+                padding-right: 90px;
+                padding-left: 90px;
+                padding-top:20px;
+                padding-bottom: 15px; 
+                color: inherit;
+                font-weight: bold;
+                text-decoration: none;
+                &:first-child{
+                    border-right:  rgb(100, 131, 131) solid 1.5px;
+                }
+                &:last-child{
+                    border-left: rgb(100, 131, 131) solid 1.5px;
+                } 
+            }
+        }  
+    }
+    section{
+        top: 30%;
+        position: relative;
+        text-align: center;  
+        h1{
+            margin: 30px;
+        }   
+        .btn{
+            @include btnStyle;
+            padding-top: 15px;
+            padding-bottom: 15px;
+           
+        }          
+    }
+}
+.toolbar{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 185px;    
+    input{   
+        padding: 6px;
+        padding-left:15px;
+        padding-right: 0px;
+        width: 150px;
+        margin: 15px;  
+        background-color: $bgColor;
+        border: $inputBorderColor solid 1px;
+    }  
+}
+.post-list{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-transform: uppercase;
+        text-align: right;
+        margin: 0px 190px 0px 0px;
+    }
+    article{
+        width: 70%;
+        align-self: center;
+        padding: 5px;
+        margin: 10px;
+        background-color: $articleBgColor;
+        h3{
+            margin: 5px 5px 0px 0px;
+            text-transform: uppercase;
+            color: $captionFontColor;
+        }
+        .btn{
+            @include btnStyle;
+            text-transform: uppercase;
+            border: none;
+            float: right;
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    img{
+        float: left;
+        padding: 5px;
+        width: 30%;
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .post-description{ 
+            font-size: 12px;
+            color:$descriptionFontColor;
+            border-bottom: $captionFontColor solid 1px; 
+        }
+        p{
+            line-height: 1.5;
+            margin: 0px;
+        } 
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-top: 40px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    div{
+        width: 70%;
+        align-self: center;
+    }
+    img{
+        align-self: center;
+        width: 100%;   
+    }  
+} 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    h1,h4{
+        text-align: right;
+        text-transform: uppercase;
+        width: 70%;
+        align-self: center;
+        margin: 0px;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        align-self: center;
+        label{
+            display: block;
+            text-align: right;
+            color:  $captionFontColor;
+        }
+        input{
+            display: flex;  
+            width: 410px;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 5px;
+            background-color: $bgColor;
+            border: $inputBorderColor solid 1px;
+        }
+        textarea{
+            width: 870px;
+            margin: 5px;
+            background-color: $bgColor;
+            border: $inputBorderColor solid 1px;
+        }
+        button{
+            @include btnStyle;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            text-transform: uppercase;
+            margin-left: 700px;
+        }   
+    }
+}
+footer{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
