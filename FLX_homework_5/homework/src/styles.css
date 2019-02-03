@@ -1,0 +1,290 @@
+body {
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  width: 80%;
+  background-color: #0b192f ;  
+  font-weight: 100;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+  background: #2d95bb;
+}
+.post-5 .posts-text{
+  width: 100%;
+}
+.post-5 .posts-text p, .post-5 .posts-text h2{
+  width: 80%;
+}
+main .posts-block [class^="posts"]:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  transition: .5s ease; 
+}
+header{
+  background-color: #162b4d;
+  width: 80%;
+  margin-bottom: 15px;
+}
+header .logo{
+  margin-left:30px;
+  margin-top:10px;
+  float: left;
+}
+header .logo h1{
+  color: #fff;
+  font-weight: 100;
+  padding: 0px;
+  margin: 0px;
+}
+header .logo span{
+  color: #B71757;
+}
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding-right: 40px;
+}
+header nav ul li{
+  padding: 25px 10px 25px 10px;
+  margin: 0px;
+}
+header nav ul li:hover{
+  background-color: #1b3661;
+  cursor: pointer;
+}
+header nav a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2vh; 
+}
+h2, h3{
+  font-weight: 200;
+}
+main{
+  display: flex;
+  width: 80%;
+  color: #fff;
+  font-weight: 100;
+  justify-content: space-between; 
+}
+.posts-block{
+  width: 76%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+main .posts-block [class^="post-"]{
+  display: flex;
+}
+main .posts-block [class^="post-"]:nth-of-type(2n){
+  flex-direction: row-reverse;
+  text-align: right; 
+}
+main .posts-text{
+  position: relative;
+  width: 50%;
+}
+main  [class^="post-"] .posts-text .date{
+  position: absolute;
+  margin: 0px;
+  top: 3px;
+  right: 5px;
+  opacity: 0.5;
+}
+main .posts-text .date p{
+  font-size: 3vh;
+}
+main .posts-text .date p span{
+  margin: 0px;
+  font-size: 6vh;
+}
+main .posts-text .date p {
+  margin: 0px;
+}
+main [class^="post-"]:nth-of-type(2n) .posts-text .date{
+  left: 5px;
+  right: auto;
+}
+main [class^="post-"]:nth-of-type(2n) .posts-text p{
+  text-align: right;
+}
+main [class^="post-"]:nth-of-type(2n) .posts-text h2{
+  text-align: right;
+}
+main .posts-text p, main .posts-text h2{
+  width: 65%;
+  margin: 25px;
+}
+main .posts-text p, .news-text p{
+  font-size: 1.7vh;
+}
+main .posts-text h2{
+  margin-bottom: 0px;
+  font-size: 5vh;
+}
+main .posts-picture{
+  width: 50%;
+}
+main .posts-picture img{
+  width: 100%;
+  height: 100%;
+}
+main .news-block{
+  width: 22%;
+}
+main .news-block .news{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+main .news-block  img{
+  width: 100%; 
+}
+main .news-block .news-text{
+  background: #fff;
+  color: #747171;
+  padding: 25px;
+}
+main .news-block .news-text h3{
+  font-size: 3vh;
+  margin-top: 0px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: #162b4d;
+  width: 80%;
+  font-size: 10px;
+  margin-top: 15px;
+}
+footer pre{
+  font-family: roboto;
+  font-weight: 100;
+  padding: 12px;
+  color: #fff;
+}
+@media screen and (max-width: 768px){
+  body{
+    width: 100%;
+  }
+  header nav{
+    display: none;
+  }
+  header{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo{
+    padding: 20px;
+  }
+  header .logo h1{
+    padding:  25px 0px 25px 0px;
+  }
+  header .menu {
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+    margin: 3px 72px;
+    border-radius: 20px;
+  }
+  main, footer{
+    width: 95%;
+  }
+  .posts-block{
+    width: 61%;
+  }
+  main .news-block{
+    width: 37%;
+  }
+  main [class^="post-"]{
+    display: flex;
+    flex-direction: column;
+  }
+  main .posts-picture{
+    width: 100%;
+  }
+  main .posts-text{
+    width: 100%;
+    height: 60vh;
+  }
+  main .posts-block [class^="post-"]:nth-of-type(2n){
+    flex-direction: column;
+  }
+  main  [class^="post-"] .posts-text .date{
+    position: absolute;
+    margin: 0px;
+    bottom: 20px;
+    left: auto;
+    right: 45%;
+    top: auto;
+    opacity: 0.5;
+  }
+  main [class^="post-"]:nth-of-type(2n) .posts-text .date{
+    left: 45%;
+    right: auto;
+  }
+  main .posts-text p{
+    width: 80%;
+    font-size: 2.5vh;
+  }
+  main .posts-text h2{
+    font-size: 6vh;
+    width: 80%;
+  }
+  main .posts-text{
+    width: auto;
+    padding: 20px;
+  }
+  main [class^="post-"]:nth-of-type(2n) .posts-text p{
+    text-align: left;
+  }
+  main [class^="post-"]:nth-of-type(2n) .posts-text h2{
+    text-align: left;
+  }
+  .post-5 .posts-text{
+    width: 90%;
+  }
+  @media screen and (max-width: 480px){
+    main{
+      display: flex;
+      flex-direction: column;
+    }
+    .posts-block, main .news-block{
+      width: 100%;
+    }
+     main .news-block .news-text h3 {
+      font-size: 5vh;
+    }
+    .news-text p {
+      font-size: 2.5vh;
+    }
+    footer{
+      flex-direction: column;
+      padding: 20px 0px 20px 0px;
+    }
+    footer pre{
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+    }
+  }
+}
