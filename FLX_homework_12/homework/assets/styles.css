@@ -44,6 +44,10 @@ button {
 .add, .cancel, .save {
     padding: 8px 30px;
     border-radius: 15px;
+    margin: 10px;
+}
+.add{
+    margin-left: 100px;
 }
 
 #root {
