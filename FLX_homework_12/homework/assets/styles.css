@@ -27,8 +27,7 @@ h2 {
 }
 
 div {
-    margin-bottom: 50px;
-    width: 100%;
+
     text-align: center;
 }
 
@@ -38,6 +37,7 @@ input {
 }
 
 button {
+  
     padding: 5px;
     cursor: pointer;
 }
@@ -47,18 +47,17 @@ button {
 }
 
 #root {
-    width: 300px;
+    width: 400px;
     min-height: 300px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .done,
 .undone,
-.todo-text,
 .delete {
     width: 35px;
     height: 35px;
@@ -80,6 +79,7 @@ button {
 
 .todo-text {
     flex: 1;
+
 }
 
 .delete {
