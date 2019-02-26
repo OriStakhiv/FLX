@@ -44,14 +44,19 @@ function bindEvents(todoItem) {
 function addTodoItem(event) {
     event.preventDefault();
 
-    if (addInput.value === ''){
-        return alert('Write task!');
-    }
+   
+     
+    
+    
+    
+    
+  
     if (count_item > max_items){   
      let notification = app.insertBefore(document.createElement('p'), todoForm);
       notification.textContent = 'Maximum item per list are created';
       notification.style.color = 'red';
       notification.style.textAlign = 'center';
+      addButton.disabled = true;
     }
     const todoItem = createTodoItem(addInput.value);
     todoList.appendChild(todoItem);
@@ -78,8 +83,10 @@ const todoItems = document.querySelectorAll('.todo-item');
 const addButton = document.getElementById('add-button')
 
 function main() {
+
     todoForm.addEventListener('submit', addTodoItem);
     todoItems.forEach(item => bindEvents(item));
+    
 }
 
 let dragEl = null;

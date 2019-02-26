@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    margin: 10px 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+h2 {
+    display: block;
+}
+
+div {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer;
+}
+.add, .cancel, .save {
+    padding: 8px 30px;
+    border-radius: 15px;
+}
+
+#root {
+    width: 300px;
+    min-height: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.done,
+.undone,
+.todo-text,
+.delete {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background-color: unset;
+}
+
+.undone {
+    background-image: url("./img/todo-s.png");
+}
+
+.done {
+    background-image: url("./img/done-s.png");    
+}
+
+.done + .todo-text {
+    background: #bbb;
+}
+
+.todo-text {
+    flex: 1;
+}
+
+.delete {
+    background-image: url("./img/remove-s.jpg");
+}
+
+.todo-empty {
+    text-align: center;
+    display: none;
+}
